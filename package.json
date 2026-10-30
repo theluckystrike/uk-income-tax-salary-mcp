@@ -1,0 +1,32 @@
+{
+  "name": "uk-income-tax-salary-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for UK income tax and salary take-home pay 2025/26 and 2026/27: Scottish bands, NI, student loans, pension, 60% trap.",
+  "type": "module",
+  "bin": {
+    "uk-income-tax-salary-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": ["dist", "README.md", "LICENSE", "DATA_SOURCES.md"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/*.test.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "uk-income-tax", "uk-salary", "take-home-pay", "paye", "national-insurance", "scottish-income-tax", "student-loan", "hmrc"],
+  "author": "theluckystrike",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/theluckystrike/uk-income-tax-salary-mcp.git" },
+  "homepage": "https://ukmoneycalc.com",
+  "mcpName": "io.github.theluckystrike/uk-income-tax-salary-mcp",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.40.0"
+  }
+}
