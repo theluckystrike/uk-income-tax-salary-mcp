@@ -47,7 +47,7 @@ claude mcp add --transport http uk-income-tax https://uk-income-tax-salary-mcp.l
 Or run it locally:
 
 ```
-claude mcp add uk-income-tax -- npx -y github:theluckystrike/uk-income-tax-salary-mcp
+claude mcp add uk-income-tax -- npx -y uk-income-tax-salary-mcp
 ```
 
 ### Claude Desktop
@@ -59,7 +59,7 @@ Add this to `claude_desktop_config.json`:
   "mcpServers": {
     "uk-income-tax": {
       "command": "npx",
-      "args": ["-y", "github:theluckystrike/uk-income-tax-salary-mcp"]
+      "args": ["-y", "uk-income-tax-salary-mcp"]
     }
   }
 }
